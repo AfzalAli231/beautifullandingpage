@@ -675,6 +675,12 @@ body {
     text-align: center;
     background-color: aquamarine;
 }
+h2 {
+    background-color: rgba(165, 42, 52, 0.815);
+}
+#Question {
+    background-color: gold;
+}
 </style>
 </head>
 <body>
@@ -1317,377 +1323,406 @@ body {
 <p>
     <textarea cols="10" rows="1" placeholder="LIN:"></textarea>
     &nbsp;
-    <h3>Employee Information Form</h3>
+    <h2>Employee Information Form</h2>
 </p>
 <br />
 <em>
 <div id="box1">
+<div>
     <p>
-        <label for="fullname"><b>Full Name:</b></label>
+        <label for="fullname" id="Question"><b>Full Name:</b></label>
         <input type="text" placeholder="enter fullname"/>
         </p>
-<br />
+</div>
+    <br />
 <hr />
+<div>
     <p>
-        <label for="preferredname"><b> Preferred First Name: </b></label>
-&nbsp;
+        <label for="preferredname" id="Question"><b>Preferred First Name:</b></label>
+    &nbsp;
         <input type="text" placeholder="enter first name"/>
- &nbsp;
-        <label for="socialsecurity"><b>Social Security:</b></label> 
+    &nbsp;
+        <label for="socialsecurity" id="Question"><b>Social Security:</b></label> 
         <input type="text" placeholder="enter social security"/>
-       </p>
+       </p>    
+</div>
 <br />
 <hr />
+<div>
     <p>
-        <label for="enterhomeaddress"><b>Home Address</b>(street):</b></label>
+        <label for="enterhomeaddress" id="Question"><b>Home Address</b>(street):</b></label>
             <input type="text" placeholder="enter home address"/>
-     </p>
+     </p>    
+</div>
 <br />
 <hr />
+<div>
     <p>
-        <label for="city"><b>City</b>:</label>
-        <input type="text" placeholder="enter city"/>
-        &nbsp;
-        <label for="state"><b>State:</b></label>
-        <input type="text" placeholder="enter state"/>
-        &nbsp;
-        <b>Zip</b>:
-        <input type="text" placeholder="enter zip"/>
-    </p>
+        <label for="city" id="Question"><b>City</b>:</label>
+           <input type="text" placeholder="enter city"/>
+           &nbsp;
+           <label for="state" id="Question"><b>State:</b></label>
+           <input type="text" placeholder="enter state"/>
+           &nbsp;
+<label for="zip" id="Question"><b>Zip</b>:</label>
+           <input type="text" placeholder="enter zip"/>
+       </p>       
+</div>
 <br />
 <hr />
+<div>
     <p>
-        <label for="homephonenumber"><b>Home Phone Number:</b></label>
+        <label for="homephonenumber" id="Question"><b>Home Phone Number:</b></label>
         <input type="number" placeholder="enter home phone number"/>
-&nbsp;
-        <b>Campus Phone Number</b>:
-        <input type="number" placeholder="enter campus phone number"/>
+    &nbsp;
+<label for="campusphonenumber" id="Question"><b>Campus Phone Number</b>:</label>
+    <input type="number" placeholder="enter campus phone number"/>
     </p>
+</div>
 <br />
 <hr />
+<div>
     <p>
-        <b>Campus Address:</b>
+<label for="campusaddress" id="Question"><b>Campus Address:</b></label>
         <input type="text" placeholder="enter campus address"/>
     </p>
+</div>
 <br />
 <hr />
-
+<div>
     <p>
-        <label for="gender"><b>Gender</b>(select one):</label>
+        <label for="gender" id="Question"><b>Gender</b>(select one):</label>
         &nbsp;
         <input type="checkbox" name="gender"/>Male 
 &nbsp;
         <input type="checkbox" name="gender"/>Female 
         &nbsp;
         &nbsp;
-        <b>Birth Date:</b>
+<label for="birthdate" id="Question"><b>Birth Date:</b></label>
         <input type="date"/>
     </p>
+</div>
 <br />
 <hr />
+<div>
     <p>
-        <label for="citizenship"> <b>Citizenship<b>(select one):</label>
+        <label for="citizenship" id="Question"> <b>Citizenship<b>(select one):</label>
             <input type="checkbox" name="citizenship"/>Citizen.
             <input type="checkbox" name="citizenship"/>Non-Citizen.
             <input type="checkbox" name="citizenship"/>Permanent Resident.
-        </p>
+        </p>    
+</div>
 <br />
 <hr />
+<div>
     <p>
-<label for="marital status"><b>Marital Status</b> (select one):</label>
-<input type="checkbox" name="marital"/> Divorced
-<input type="checkbox" name="marital"/> Married
-<input type="checkbox" name="marital"/> Widowed
-<input type="checkbox" name="marital"/> Single
-    </p>
+        <label for="marital status" id="Question"><b>Marital Status</b> (select one):</label>
+        <input type="checkbox" name="marital"/> Divorced
+        <input type="checkbox" name="marital"/> Married
+        <input type="checkbox" name="marital"/> Widowed
+        <input type="checkbox" name="marital"/> Single
+            </p>        
+</div>
 <br />
 <hr />
+<div>
     <p>
         U.S. Government Ethnicity and Race Classifications - Please select an Ethnicity classification and all Race classifications that may apply:
     </p>
-<br />
-<hr />
-<p>
-Ethnicity (select one):
-<br />
-<br />
-<input type="checkbox" name="ethnicity"/>Hispanic or Latino
-<br />
-<br />
-<input type="checkbox" name="ethnicity"/>No Hispanic or Latino
-<br />
-<br />
-<b>Race</b>(multiple selection permitted):
-<br />
-<input type="checkbox" name="race"/>Asian
-<br />
-<br />
-<input type="checkbox" name="race"/>Black or African American
-&nbsp;
-<input type="checkbox" name="race"/>American Indian or Alaskan Native
-<br />
-<br />
-<input type="checkbox" name="race"/>White
-&nbsp;
-<input type="checkbox" name="race"/>Native Hawaiian or Other Pacific Islander
-</p>
-<br />
-<hr />
-<p>
-<b>Veterian Information</b>(select one):
-&nbsp;
-&nbsp;
-<input type="checkbox" name="veteran"/>Vietnam Era Veteran
-<br />
-<br />
-<input type="checkbox" name="veteran"/>None
-&nbsp;
-&nbsp;
-<input type="checkbox" name="veteran"/>Disabled Veteran
-&nbsp;
-&nbsp;
-<input type="checkbox" name="veteran"/>Other Protected Veteran
-&nbsp;
-&nbsp;
-<input type="checkbox" name="veteran"/>Armed Forces Service Medal Veteran
-<br />
-<br />
-<input type="checkbox" name="veteran"/>Recently Seperated Veteran (month/year of seperation) <input type="date" name="veteran">
-&nbsp;
-&nbsp;
-<input type="checkbox" name="veteran"/>Veteran (no other category applies to me)
-</p>
-<br />
-<hr />
 </div>
-<div id="box2">
+<br />
+<hr />
+<div>
     <p>
-<label for="emergencycontactname1"><b>Emergency Contact name (1)</b>:</label>
-<input type="text" name="emergencycontactname1"/>
-&nbsp;
-&nbsp;
-<label for="phonenumber1"><b>Phone Number</b>:</label>
-<input type="number" name="phonenumber1"/>
-<br />
-<br />
-<hr />
-<label for="address1"><b>Address</b>:</label>
-<input type="text" name="address1"/>
-<br />
-<br />
-<hr />
-<label for="relationship"><b>Relationship</b>(select one):</label>
-<br />
-<br />
-<input type="checkbox" name="relationship1"/>Aunt/Uncle
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Brother
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Spouse/Significant Other
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Great Grandparent
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Father
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Grandparent
-<br />
-<br />
-<input type="checkbox" name="relationship1"/>Child
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Mother
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Other Relative
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Parents
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Sister
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship1"/>Cousin
-</p>
-<br />
-<br />
-<hr />
-<p>
-    <label for="emergencycontactname2"><b>Emergency Contact Name</b>(2):</label>
-<input type="text" name="emergencycontactname2"/>
-&nbsp;
-&nbsp;
-<label for="phonenumber2"><b>Phone Number</b>:</label>
-<input type="number" name="phonenumber2"/>
-<br />
-<br />
-<hr />
-<label for="address2"><b>Address</b>:</label>
-<input type="text" name="address2"/>
-<br />
-<br />
-<hr />
-<label for="relationship2"><b>Relationship</b>(select one):</label>
-<input type="checkbox" name="relationship2"/>Aunt/Uncle
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Brother
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Spouse/Sign Other
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Great Grandparent
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Father
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Grandparent
-<br />
-<br />
-<input type="checkbox" name="relationship2"/>Child
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Mother
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Other Relative
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Parents
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Sister
-&nbsp;
-&nbsp;
-<input type="checkbox" name="relationship2"/>Cousin
-</p>
+<label for="ethnicity" id="Question"><b>Ethnicity (select one):</b></label>
+        <br />
+        <br />
+        <input type="checkbox" name="ethnicity"/>Hispanic or Latino
+        <br />
+        <br />
+        <input type="checkbox" name="ethnicity"/>No Hispanic or Latino
+        <br />
+        <br />
+<label for="race" id="Question"><b>Race</b>(multiple selection permitted):</label>
+        <br />
+        <input type="checkbox" name="race"/>Asian
+        <br />
+        <br />
+        <input type="checkbox" name="race"/>Black or African American
+        &nbsp;
+        <input type="checkbox" name="race"/>American Indian or Alaskan Native
+        <br />
+        <br />
+        <input type="checkbox" name="race"/>White
+        &nbsp;
+        <input type="checkbox" name="race"/>Native Hawaiian or Other Pacific Islander
+        </p>
+        <br />
+        <hr />
+        </div>
+<div>
+    <p>        
+<label for="veteraninformation" id="Question"><b>Veterian Information</b>(select one):</label>
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="veteran"/>Vietnam Era Veteran
+        <br />
+        <br />
+        <input type="checkbox" name="veteran"/>None
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="veteran"/>Disabled Veteran
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="veteran"/>Other Protected Veteran
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="veteran"/>Armed Forces Service Medal Veteran
+        <br />
+        <br />
+        <input type="checkbox" name="veteran"/>Recently Seperated Veteran (month/year of seperation) <input type="date" name="veteran">
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="veteran"/>Veteran (no other category applies to me)
+        </p>
+        <br />
+        <hr />        
+</div>
+    </div>
+<div id="box2">
+<div>
+    <p>
+        <label for="emergencycontactname1" id="Question"><b>Emergency Contact name (1)</b>:</label>
+        <input type="text" name="emergencycontactname1" placeholder="enter emergency contact name 1"/>
+        &nbsp;
+        &nbsp;
+        <label for="phonenumber1" id="Question"><b>Phone Number</b>:</label>
+        <input type="number" name="phonenumber1" placeholder="enter phone number 1"/>
+        <br />
+        <br />
+        <hr />
+        <label for="address1" id="Question"><b>Address</b>:</label>
+        <input type="text" name="address1" placeholder="enter address 1"/>
+        <br />
+        <br />
+        <hr />
+        <label for="relationship" id="Question"><b>Relationship</b>(select one):</label>
+        <br />
+        <br />
+        <input type="checkbox" name="relationship1"/>Aunt/Uncle
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Brother
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Spouse/Significant Other
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Great Grandparent
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Father
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Grandparent
+        <br />
+        <br />
+        <input type="checkbox" name="relationship1"/>Child
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Mother
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Other Relative
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Parents
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Sister
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship1"/>Cousin
+        </p>
+        </div>
+        <div>
+        <br />
+        <br />
+        <hr />
+        <p>
+            <label for="emergencycontactname2" id="Question"><b>Emergency Contact Name</b>(2):</label>
+        <input type="text" name="emergencycontactname2" placeholder="enter emergency contact name 2"/>
+        &nbsp;
+        &nbsp;
+        <label for="phonenumber2" id="Question"><b>Phone Number</b>:</label>
+        <input type="number" name="phonenumber2" placeholder="enter phone number 2"/>
+        <br />
+        <br />
+        <hr />
+        <label for="address2" id="Question"><b>Address</b>:</label>
+        <input type="text" name="address2" placeholder="enter address 2"/>
+        <br />
+        <br />
+        <hr />
+        <label for="relationship2" id="Question"><b>Relationship</b>(select one):</label>
+        <input type="checkbox" name="relationship2"/>Aunt/Uncle
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Brother
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Spouse/Sign Other
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Great Grandparent
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Father
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Grandparent
+        <br />
+        <br />
+        <input type="checkbox" name="relationship2"/>Child
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Mother
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Other Relative
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Parents
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Sister
+        &nbsp;
+        &nbsp;
+        <input type="checkbox" name="relationship2"/>Cousin
+        </p>        
+</div>
 </div>
 <br />
 <div id="box3">
-<p>
-    Education(fill list only completed degrees):
+<div>
+    <p>
+<label for="education" id="Question"><b>Education(fill list only completed degrees):</b></label>
+        <br />
+        <br />
+        <input type="checkbox" name="education"/>GED or High School
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="enter institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
     <br />
     <br />
-    <input type="checkbox" name="education"/>GED or High School
+        <input type="checkbox" name="education"/>Associate's Degree
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="Institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
     <br />
     <br />
-    Institution
-    <input type="text" name="education" placeholder="enter institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
+        <input type="checkbox" name="education"/>Bachelor's Degree
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="Institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
     <br />
     <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-<br />
-<br />
-    <input type="checkbox" name="education"/>Associate's Degree
+        <input type="checkbox" name="education"/>Master's Degree
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="Institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
     <br />
     <br />
-    Institution
-    <input type="text" name="education" placeholder="Institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
+        <input type="checkbox" name="education"/>Ph.D.
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="Institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
     <br />
     <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-<br />
-<br />
-    <input type="checkbox" name="education"/>Bachelor's Degree
-    <br />
-    <br />
-    Institution
-    <input type="text" name="education" placeholder="Institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
-    <br />
-    <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-<br />
-<br />
-    <input type="checkbox" name="education"/>Master's Degree
-    <br />
-    <br />
-    Institution
-    <input type="text" name="education" placeholder="Institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
-    <br />
-    <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-<br />
-<br />
-    <input type="checkbox" name="education"/>Ph.D.
-    <br />
-    <br />
-    Institution
-    <input type="text" name="education" placeholder="Institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
-    <br />
-    <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-<br />
-<br />
-    <input type="checkbox" name="education"/>Other (list)
-    <br />
-    <br />
-    Institution
-    <input type="text" name="education" placeholder="Institution"/>
-    &nbsp;
-    &nbsp;
-    City/State
-    <input type="text" name="education" placeholder="enter city/state"/>
-    <br />
-    <br />
-    Year of Graduation
-    <input type="text" name="education" placeholder="enter year of graduation"/>
-    &nbsp;
-    &nbsp;
-    Major
-    <input type="text" name="education" placeholder="Major it"/>
-</p>
+        <input type="checkbox" name="education"/>Other (list)
+        <br />
+        <br />
+        Institution
+        <input type="text" name="education" placeholder="Institution"/>
+        &nbsp;
+        &nbsp;
+        City/State
+        <input type="text" name="education" placeholder="enter city/state"/>
+        <br />
+        <br />
+        Year of Graduation
+        <input type="text" name="education" placeholder="enter year of graduation"/>
+        &nbsp;
+        &nbsp;
+        Major
+        <input type="text" name="education" placeholder="Major it"/>
+    </p>    
+</div>
 </div>
 </em>
 </form>

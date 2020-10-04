@@ -642,15 +642,20 @@ width: 40px;
 }
 #ass03 {
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+    width: 60%;
+    height: 100%;
     border: 2px solid orangered;
     color: seagreen;
     margin-top: 55px;
+    background: url(https://source.unsplash.com/user/erondu/daily);
+    background-size: 100% 100%, cover;
+    background-repeat: no-repeat;
 }
 body {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+    text-align: center auto;
 }
 #ass03 h1 {
     background-color: yellow;
@@ -664,11 +669,11 @@ body {
     background-color: aquamarine;
     color: blue;
     padding: 10px 25px;
-} 
-#ass03 {
-    background-image: url(../git/stock-photo-150595123-1500x1000.jpg);
-background-size: 100% 100%, cover;
-    background-repeat: no-repeat;
+}
+#ass02 {
+    text-overflow: hidden;
+    text-align: center;
+    background-color: aquamarine;
 }
 </style>
 </head>
@@ -1405,6 +1410,7 @@ background-size: 100% 100%, cover;
 <p>
 Ethnicity (select one):
 <br />
+<br />
 <input type="checkbox" name="ethnicity"/>Hispanic or Latino
 <br />
 <br />
@@ -1431,13 +1437,13 @@ Ethnicity (select one):
 <b>Veterian Information</b>(select one):
 &nbsp;
 &nbsp;
-<input type="checkbox" name=""/>Vietnam Era Veteran
+<input type="checkbox" name="veteran"/>Vietnam Era Veteran
 <br />
 <br />
-<input type="checkbox" name="veterian"/>None
+<input type="checkbox" name="veteran"/>None
 &nbsp;
 &nbsp;
-<input type="checkbox" name="veterian"/>Disabled Veteran
+<input type="checkbox" name="veteran"/>Disabled Veteran
 &nbsp;
 &nbsp;
 <input type="checkbox" name="veteran"/>Other Protected Veteran
@@ -1462,11 +1468,16 @@ Ethnicity (select one):
 &nbsp;
 <label for="phonenumber1"><b>Phone Number</b>:</label>
 <input type="number" name="phonenumber1"/>
+<br />
+<br />
 <hr />
 <label for="address1"><b>Address</b>:</label>
 <input type="text" name="address1"/>
-<hr>
+<br />
+<br />
+<hr />
 <label for="relationship"><b>Relationship</b>(select one):</label>
+<br />
 <br />
 <input type="checkbox" name="relationship1"/>Aunt/Uncle
 &nbsp;
@@ -1484,6 +1495,7 @@ Ethnicity (select one):
 &nbsp;
 &nbsp;
 <input type="checkbox" name="relationship1"/>Grandparent
+<br />
 <br />
 <input type="checkbox" name="relationship1"/>Child
 &nbsp;
@@ -1503,6 +1515,7 @@ Ethnicity (select one):
 <input type="checkbox" name="relationship1"/>Cousin
 </p>
 <br />
+<br />
 <hr />
 <p>
     <label for="emergencycontactname2"><b>Emergency Contact Name</b>(2):</label>
@@ -1511,11 +1524,14 @@ Ethnicity (select one):
 &nbsp;
 <label for="phonenumber2"><b>Phone Number</b>:</label>
 <input type="number" name="phonenumber2"/>
+<br />
+<br />
 <hr />
 <label for="address2"><b>Address</b>:</label>
 <input type="text" name="address2"/>
-<hr>
 <br />
+<br />
+<hr />
 <label for="relationship2"><b>Relationship</b>(select one):</label>
 <input type="checkbox" name="relationship2"/>Aunt/Uncle
 &nbsp;
@@ -1533,6 +1549,7 @@ Ethnicity (select one):
 &nbsp;
 &nbsp;
 <input type="checkbox" name="relationship2"/>Grandparent
+<br />
 <br />
 <input type="checkbox" name="relationship2"/>Child
 &nbsp;
@@ -1555,117 +1572,121 @@ Ethnicity (select one):
 <br />
 <div id="box3">
 <p>
-    <b>Education</b>(fill list only completed degrees):
+    Education(fill list only completed degrees):
+    <br />
+    <br />
     <input type="checkbox" name="education"/>GED or High School
     <br />
     <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
+<br />
 <br />
     <input type="checkbox" name="education"/>Associate's Degree
     <br />
     <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="Institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
 <br />
 <br />
     <input type="checkbox" name="education"/>Bachelor's Degree
     <br />
     <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="Institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
 <br />
 <br />
     <input type="checkbox" name="education"/>Master's Degree
     <br />
+    <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="Institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
 <br />
 <br />
     <input type="checkbox" name="education"/>Ph.D.
     <br />
     <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="Institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
 <br />
 <br />
     <input type="checkbox" name="education"/>Other (list)
     <br />
     <br />
     Institution
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="Institution"/>
     &nbsp;
     &nbsp;
     City/State
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="enter city/state"/>
     <br />
     <br />
     Year of Graduation
-    <input type="text" name="education">
+    <input type="text" name="education" placeholder="enter year of graduation"/>
     &nbsp;
     &nbsp;
     Major
-    <input type="text" name="education"/>
+    <input type="text" name="education" placeholder="Major it"/>
 </p>
 </div>
 </em>
@@ -1677,7 +1698,7 @@ Ethnicity (select one):
     <h1>Welcome To My Bootcamp</h1>
 <p>
     <b>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus fugiat quia doloremque distinctio! Optio numquam laboriosam ipsa officia cupiditate eos quod! Sit, dignissimos eum! Ut facere at quas vitae eligendi dicta libero iusto ducimus quo enim, odio nobis optio animi, in qui nihil recusandae magni voluptate deleniti alias rerum natus quidem explicabo corrupti? Harum et voluptate earum inventore ipsam explicabo commodi voluptas aspernatur consectetur, nemo delectus sequi eius deleniti omnis a libero, ducimus odit ex illo recusandae aliquam molestias voluptatem iure accusantium! Consequuntur a vitae, deserunt asperiores corporis dolore quaerat. Enim illo hic facilis commodi unde obcaecati a officia minima ea? Iusto pariatur provident molestias, praesentium iste molestiae labore magni, voluptas quisquam omnis dolor quod error optio nulla. Atque voluptatem blanditiis at necessitatibus delectus minima incidunt quasi, animi quibusdam explicabo aliquid cum et! Architecto facilis dolor cum quaerat, iure minima libero nostrum voluptate in, officia dolorum at repellendus, tenetur corrupti quam esse deleniti dolorem asperiores qui veniam! Illum quas assumenda beatae ea similique? Minus, aspernatur eaque! Voluptatibus expedita tempora est nihil. Ipsa esse iusto mollitia, repellendus, amet perferendis porro ut deleniti, facilis voluptate itaque cum laborum tempore nesciunt labore natus. Nemo nesciunt sed labore enim expedita laudantium laborum non? Hic dicta iste doloremque provident consectetur, ut harum nihil reprehenderit quaerat beatae quia facere illum explicabo vero corrupti veritatis, ea excepturi perferendis maxime culpa commodi nisi porro illo dolorum? Consequatur provident est, explicabo obcaecati omnis saepe. Numquam iure fugit repudiandae, quia itaque officiis ea officia blanditiis tempore minima quo nostrum voluptas quidem dolore voluptatem quae ipsam ut dolores sed accusantium accusamus sint nam deserunt commodi. Modi debitis mollitia aut quibusdam rerum, hic ipsa. Rerum repellendus dignissimos, possimus tempore perferendis, aperiam saepe itaque magni non enim ullam doloremque ducimus recusandae, libero ut dolores ex pariatur natus. Ut illum eum neque dicta deserunt, quibusdam iusto quas accusamus recusandae beatae harum ab possimus eligendi nesciunt facere itaque nihil dolore quia nisi consequatur esse quos ipsum! Dicta qui culpa illum ipsum dolore iusto possimus obcaecati quod nam expedita rerum eligendi ad molestias id dolorum corrupti sunt nulla placeat architecto, ipsa velit beatae natus amet! Alias cum dolores quos molestiae, incidunt ex quod porro iste vitae ad earum impedit beatae rem quibusdam placeat, itaque atque in error exercitationem? Dicta quos magnam nam adipisci culpa nostrum. Reiciendis minus nostrum quam consequatur totam eum cum id deserunt quibusdam fugiat asperiores possimus unde aspernatur impedit sit quo dicta officiis nam quae minima voluptatem, suscipit magni. Quod tenetur doloribus reiciendis quisquam ullam maiores possimus, harum quam odio, voluptatum, vel error. Veritatis quos assumenda deserunt voluptate quo fugiat! Repellat exercitationem ad laudantium modi assumenda nobis commodi ab cum rerum pariatur hic impedit, enim explicabo recusandae corporis fugiat repudiandae sequi quam! Nam, quisquam eaque non similique nihil ad recusandae adipisci, quidem suscipit sequi quibusdam. Itaque, quas eos! Veritatis laborum possimus libero aperiam recusandae rerum debitis. Iusto, voluptate consectetur. Dolor asperiores, vel facere pariatur commodi cumque, ducimus, ad aspernatur voluptatibus odit minima. Debitis architecto aspernatur cum maxime, dolores qui vel hic aut ut ducimus quo recusandae praesentium ad delectus explicabo reprehenderit illum voluptas tempore facilis sint ullam? Nemo non earum rem fugit facilis laborum itaque perferendis iste inventore alias deleniti ea, repudiandae asperiores quaerat error ex corrupti adipisci tenetur. Cupiditate repudiandae quas et quisquam distinctio iste alias eveniet porro provident ea? Veniam, natus voluptatum cumque voluptates quae modi totam possimus incidunt ut aliquam illum. Totam, sit amet dolore nam dolores neque! Nostrum ratione enim perferendis placeat nam sequi sed voluptas velit quibusdam et rem fugiat, consequuntur reiciendis incidunt suscipit a deleniti deserunt? Obcaecati, magnam velit? Iste mollitia neque culpa totam quos, alias sit rem voluptas corrupti magnam eum aspernatur quo harum ut quia sint explicabo esse quam voluptatem perspiciatis libero! Nobis alias repudiandae, quae architecto voluptates unde aut in molestiae dolores cum veritatis doloremque quo voluptatem, nisi distinctio dignissimos exercitationem? Magni animi iusto obcaecati sed eligendi quaerat mollitia provident quo doloremque, rerum dolor facere a corrupti. Aspernatur dolor tenetur sunt, voluptatibus provident magni similique fugiat blanditiis, id facere illo? Quia nostrum ipsam, officiis perferendis eum voluptatum, obcaecati libero molestias eligendi id illo vel quasi consequuntur neque doloremque! At neque atque, qui, maxime mollitia architecto ratione esse dolor error similique libero autem voluptas assumenda exercitationem nam ducimus! Repudiandae cumque harum iste, quas consequatur et minima officia aperiam distinctio ipsa, nemo blanditiis autem atque ducimus enim ullam ex esse pariatur commodi aut explicabo rem quibusdam? Alias incidunt praesentium explicabo doloremque cupiditate mollitia atque? Repudiandae eius, mollitia blanditiis itaque inventore vel iusto. Dolor iusto suscipit vero repellendus ut voluptate! Minus officiis architecto modi dicta facere voluptates exercitationem quam aliquam quidem laborum nostrum alias laudantium sequi beatae error repudiandae dolores, voluptas aperiam ut! Numquam ipsa, error consequatur eius recusandae porro voluptatem amet sequi, ea deleniti iste at cupiditate quos aliquid consectetur magnam quidem modi voluptate facilis. Labore fuga voluptatum, rerum veniam unde sapiente! Magnam accusamus illo architecto, debitis in beatae! In, sunt. Sit fugit excepturi nemo? Quasi voluptates dolore nesciunt, incidunt doloribus tempora! Atque perspiciatis ut explicabo animi, placeat a, quos neque omnis quod ipsa exercitationem vero quo sequi amet, eveniet dignissimos porro perferendis. Totam veniam ipsum saepe ducimus cumque maxime, sequi, rem ratione excepturi distinctio facere corporis incidunt possimus eius quis quidem aperiam! Suscipit odit totam velit, laborum magnam voluptatem dolorum dolorem corrupti maiores in reprehenderit beatae porro, obcaecati excepturi harum explicabo placeat. Nulla tenetur, id voluptatibus aliquid soluta beatae commodi rerum dolorem qui sed recusandae corporis facere quibusdam possimus autem quam, nesciunt tempore odit. Doloremque ducimus accusantium esse a doloribus perspiciatis, ratione iure cumque qui, ipsa beatae, debitis fugit mollitia quae. Fugit aliquam quo commodi similique autem eos magnam. Illo sunt, dolorem et aut deleniti quisquam laborum similique sint voluptatem rem mollitia distinctio nostrum, laboriosam cumque eum vitae ullam eaque perspiciatis! Repellendus, dolores at sed nemo blanditiis explicabo doloribus harum modi quas neque perspiciatis nihil, alias exercitationem illum provident dolor delectus ut dolorum et facilis! Dolorum nisi explicabo voluptate ad corporis nihil nemo aliquid ducimus ipsam. Illo quis totam facere eligendi deserunt error praesentium.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestias aliquid delectus maiores harum possimus reiciendis voluptas eveniet fugiat illum voluptatibus eius quibusdam eaque nostrum labore sed et provident distinctio error, eos, cupiditate quod aperiam libero! Corporis velit recusandae consequuntur nulla fugiat ut, dignissimos iure voluptas mollitia distinctio eveniet error cumque facilis repellendus quia aliquid saepe soluta rem sint, asperiores vel ab fuga? Consequatur reprehenderit voluptates soluta fugiat esse doloremque possimus iure, aliquid dolorum, excepturi obcaecati omnis, alias officiis accusantium et ad sunt eos cumque animi ea? Autem eaque corrupti doloremque quo, perspiciatis iusto exercitationem voluptatem, labore eveniet tenetur ducimus sed sint, recusandae consequuntur fugit. Voluptatibus sunt amet ipsum fugit tenetur architecto, voluptatem dolore iste repellendus deserunt quia, rerum accusamus beatae dolores nisi expedita earum! Nulla, recusandae ipsa. Numquam velit vero expedita dolores libero porro quod distinctio voluptas hic voluptatibus facilis earum officia nesciunt veritatis consequatur similique voluptatem placeat voluptates tempore, repudiandae ad illo sapiente! Maxime voluptatibus aspernatur eius minus praesentium dolorum voluptatum, sunt porro necessitatibus iste culpa illum soluta dolor. Minus ratione, asperiores possimus obcaecati autem pariatur laudantium doloremque molestias sequi unde. Rem, magnam. Incidunt, ullam! Vel saepe, blanditiis maiores magni architecto corporis in adipisci. Delectus, inventore ex rem nobis labore eligendi natus voluptatibus debitis veritatis amet aperiam earum, maiores minima pariatur officia sapiente voluptatem numquam. Possimus esse veritatis officia, omnis quibusdam blanditiis, nemo, quam ab ea quas deserunt tempora reprehenderit. Asperiores eligendi cupiditate et eaque officia architecto voluptatem omnis porro, deleniti possimus voluptas incidunt corrupti consequuntur adipisci illo? Eius officiis natus quas iste, incidunt, exercitationem cum, cumque atque magnam beatae at inventore? Facere reprehenderit et unde doloremque aspernatur laudantium illum doloribus, eveniet quia alias, amet sunt officiis repudiandae perspiciatis iste, ratione culpa. Nostrum quis, unde ducimus veritatis voluptatem reprehenderit. Quia placeat expedita repellat voluptate minus ipsum quibusdam nobis!
     </b>
     </p>
     <button>Hello World!</button>
